@@ -19,7 +19,7 @@ MIT, see LICENSE for more details.
 import os
 import sys
 #New submodules defined inside this module must be imported here
-import flights_handler
+import main_handler
 
 __version__ = '1.0.0'
 

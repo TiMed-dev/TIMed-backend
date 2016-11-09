@@ -18,6 +18,7 @@ import os
 import sys
 import web
 import rest
+import tornado.web
 
 #Define new rest associations
 REST = [
@@ -29,7 +30,11 @@ REST = [
 
 # Define new web rendering route associations
 WEB = [
-(r'/flights', web.flights_handler.MainHandler)
+(r'/', web.main_handler.MainHandler)
 ]
 
-ROUTES = REST + WEB
+STATIC = [
+    (r'/static/(.*)', tornado.web.StaticFileHandler, {'path':'static'})
+]
+
+ROUTES = REST + WEB + STATIC
