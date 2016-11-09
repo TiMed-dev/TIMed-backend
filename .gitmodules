@@ -4,3 +4,6 @@
 [submodule "static"]
 	path = static
 	url = git@github.com:TiMed-dev/TIMed-frontend.git
+[submodule "nn"]
+	path = nn
+	url = git@github.com:TiMed-dev/TIMed-ML.git
