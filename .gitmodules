@@ -1,6 +1,3 @@
-[submodule "TIMed-frontend"]
-	path = TIMed-frontend
-	url = git@github.com:TiMed-dev/TIMed-frontend.git
 [submodule "static"]
 	path = static
 	url = git@github.com:TiMed-dev/TIMed-frontend.git
