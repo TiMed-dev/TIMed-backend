@@ -5,6 +5,7 @@ import sys
 import routes
 import logging
 import coloredlogs
+import numpy as np
 import tornado.web
 import tornado.ioloop
 import psycopg2.extras
@@ -43,6 +44,8 @@ def main():
     db.initialize_db('psycopg2', cp_noisy=True, user=USER, password=PASSWORD,
                      database=DATABASE, host=HOST, cursor_factory=psycopg2.extras.DictCursor)
 
+    W = np.load('./nn/W_partial.npz')['arr_0']
+    application.W = W
     application.db = db
     application.listen(8000)
     try:

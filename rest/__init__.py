@@ -20,9 +20,6 @@ MIT, see LICENSE for more details.
 import os
 import sys
 #New submodules defined inside this module must be imported here
-import countries_rest
-import flights_rest
-import users_rest
 import random_rest
 
 __version__ = '1.0.0'

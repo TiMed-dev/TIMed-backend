@@ -6,12 +6,11 @@ import json
 import datetime
 import tornado.web
 import tornado.escape
-import logic.tm as tm
-import models.user as user
 
 class MainHandler(tornado.web.RequestHandler):
     def initialize(self, db=None):
         self.db = db
+        self.W = self.application.W
 
     def prepare(self):
         if self.request.headers["Content-Type"].startswith("application/json"):

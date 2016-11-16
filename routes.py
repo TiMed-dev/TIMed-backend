@@ -22,15 +22,12 @@ import tornado.web
 
 #Define new rest associations
 REST = [
-(r"/api/countries(/?([A-Z]{2})?)", rest.countries_rest.MainHandler),
-(r'/api/flights', rest.flights_rest.MainHandler),
-(r'/api/users', rest.users_rest.MainHandler),
-(r'/api/random', rest.random_rest.MainHandler)
+    (r'/api/analyse', rest.random_rest.MainHandler)
 ]
 
 # Define new web rendering route associations
 WEB = [
-(r'/', web.main_handler.MainHandler)
+    (r'/', web.main_handler.MainHandler)
 ]
 
 STATIC = [
