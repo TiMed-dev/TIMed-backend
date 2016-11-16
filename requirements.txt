@@ -4,3 +4,6 @@ toradbapi
 twisted
 psycopg2
 jsonpickle
+editdistance
+numpy
+scipy
